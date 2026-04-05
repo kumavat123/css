@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* there is a box which is relatively position to small box*/
+#box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+}
+
+/* its a child and moves relatively with parent box */
+#small {
+
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+#innersmall {
+
+
+    width: 50px;
+    height: 50px;
+    background-color: rgb(16, 136, 206);
+}
+
+#microinnersmall {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(59, 221, 19);
+}
+
+#car1 {
+
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+
+#car2 {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background-color: blue;
+}
+
+#car3 {
+    width: 270px;
+    height: 240px;
+    background-color: rgb(231, 39, 173);
+}
+
+#base {
+    position: fixed;
+    right: 0%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
