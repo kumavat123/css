@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#parent {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(11, 12, 12);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 50% 25%;
+
+}
+
+
+.box {
+
+    background-color: rgb(139, 15, 15);
+    border: 3px solid black;
+
+}
+
+/* .box:nth-child(2) { 
+    background-color: rgb(52, 76, 180);
+    border: 3px solid black;
+}
+
+.box:nth-child(3) {
+    background-color: rgb(138, 18, 108);
+    border: 3px solid black;
+} */

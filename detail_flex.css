@@ -49,3 +49,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+h1 {
+    display: inline-block;
+    background-color: yellow;
+}
+
+h2 {
+    display: inline-block;
+}
