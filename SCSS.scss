@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+// mixins in scss
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin blue-button ($bg-color, $text-color: white, $padding: 10px 20px) {
+    background: $bg-color;
+    color: $text-color;
+    padding: $padding;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+// nesting in scss
+main {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    // mixins:for repeating the same properties in multiple selectors
+    @include flex-center;
+    align-items: center;
+
+
+    section {
+        height: 50%;
+        width: 50%;
+        background: white;
+        @include flex-center;
+
+
+        h1 {
+            font-size: 2rem;
+            color: black;
+        }
+
+        .blue {
+            @include blue-button(blue, white, 15px 30px);
+
+        }
+
+
+
+        .red {
+            @include blue-button(red, white, 15px 30px);
+        }
+
+
+
+    }
+}
