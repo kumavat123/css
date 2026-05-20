@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+html {
+    /* default font size is 16px, so we can use that as a base for our calculations */
+    /*2nd nerest ancestor  */
+    font-size: 40px;
+}
+
+section {
+    font-size: 50px;
+    /* 1st nearest ancestor with a font-size of 50px */
+}
+
+.red {
+    background-color: red;
+    height: 50vh;
+    width: 50vw;
+}
+
+h1 {
+    color: white;
+    /*font-size: 2rem;/* Default 1rem is equal to 16px so, (16px * 2)=32px */
+    font-size: 2rem;
+    /* 2 times the root font size (40px) = 80px */
+}
+
+section h1 {
+    /* 3 times the root font size (40px) = 120px */
+    /*font-size: 3rem;  2nd nerest ancestor  */
+
+
+    /* 1 nearest ancestor with a font-size of 50px, so 3 times 50px = 150px */
+    font-size: 3em;
+
+}

@@ -1,0 +1,45 @@
+1.vh,vw
+viewport width =500px
+viewport height=600px
+
+then,
+    100vw=full viewport width=>500px
+    1vw=5px
+    50vw=250px
+if, 100vw=800px
+then,
+    1vw=8px
+    50vw=400px
+
+similar for height also
+if, 100vh=600px
+   then, 
+       1vh=6px
+       50vh=300px
+
+default fontsize is 16px like html,section,main
+
+2.rem=  depends on root element
+        default font size is 16px, so we can use that as a base for our calculations
+        So,font-size: 2rem;/* Default 1rem is equal to 16px so, (16px * 2)=32px
+
+
+3.em=   nerest ancestor
+        html {
+    /* default font size is 16px, so we can use that as a base for our calculations */
+    /*2nd nerest ancestor  */
+    font-size: 40px;
+}
+       section {
+    font-size: 50px;
+    /* 1st nearest ancestor with a font-size of 50px */
+}
+section h1 {
+    /* 3 times the root font size (40px) = 120px */
+    /*font-size: 3rem;  2nd nerest ancestor  */
+    
+    
+    /* 1 nearest ancestor with a font-size of 50px, so 3 times 50px = 150px */
+    font-size: 3em;
+
+}
