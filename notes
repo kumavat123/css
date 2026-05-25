@@ -43,3 +43,12 @@ section h1 {
     font-size: 3em;
 
 }
+
+
+clamp: used to give upper limit and lower limit for the view port
+example: 
+html{
+    /* 100vw=1900px*/
+    /* 1vw=19px */
+    font-size:clamp(14px,1vw,18px);
+}
