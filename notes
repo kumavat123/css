@@ -52,3 +52,26 @@ html{
     /* 1vw=19px */
     font-size:clamp(14px,1vw,18px);
 }
+
+git add .
+git commit -m "13th commit"
+git push
+
+
+
+how to commonly make mobile view to desktop view in responsive website
+
+1.media query
+@media (min-width: 768px) {
+    main {
+        section {
+            flex-direction: row;
+            gap: 3rem;
+            padding: 1rem 4rem;
+            }}}//reference from responsive_practice.scss
+
+how to make 4K view at the center
+
+section {
+    max-width: 1500px;
+}//reference from responsive_practice.scss
